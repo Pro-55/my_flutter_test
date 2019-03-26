@@ -14,7 +14,9 @@ class MyApp extends StatelessWidget {
     scaffold.showSnackBar(SnackBar(
       content: Text('$_snackBarMessage'),
       action: SnackBarAction(
-          label: '$_snackBarAction', onPressed: scaffold.hideCurrentSnackBar),
+          textColor: Colors.white,
+          label: '$_snackBarAction',
+          onPressed: scaffold.hideCurrentSnackBar),
     ));
   }
 
@@ -42,7 +44,7 @@ class MyApp extends StatelessWidget {
                       RaisedButton(
                         onPressed: () => _onClick(context),
                         color: Colors.red,
-                        textColor: Colors.blue,
+                        textColor: Colors.white,
                         child: Container(
                           decoration: const BoxDecoration(
                             color: Colors.red,
